@@ -1,0 +1,26 @@
+{
+  "name": "KC_Burger",
+  "version": "1.0.0",
+  "description": "Burger logger app using MySQL, Node, Express, Handlebars, and a homemade ORM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karna1014/KC_Burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karna1014/KC_Burger/issues"
+  },
+  "homepage": "https://github.com/Karna1014/KC_Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.0",
+    "minimist": "^1.2.5",
+    "mysql": "^2.18.1"
+  }
+}
