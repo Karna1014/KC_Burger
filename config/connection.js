@@ -14,7 +14,7 @@ connection.connect(function(err) {
         console.error("Error Connecting: " + err.stack);
         return;
     }
-    console.log("Connected as ID " + connected.threadID);
+    console.log("Connected as id " + connection.threadId);
 });
 
 //Export connection for other file use
