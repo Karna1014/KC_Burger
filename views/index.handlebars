@@ -1,0 +1,37 @@
+
+
+<div class= "container-fluid">
+    <div class= "row">
+        <div class= "col md 12">
+            <img src="../public/images/burger-bacon.jpg" 
+            height="200" class="right-block">
+            <img src="../public/images/burger-basic.jpg" 
+            height="200" class="center-block">
+            <img src="../public/images/burger-lamb.jpg" 
+            height="200" class="left-block">
+            <h1>Eat da Burger!</h1>
+        </div>
+    </div>
+    <br>
+<div>
+    <h2>Fav Burgers</h2>
+    <u1>
+        {{#each burgers}}
+            {{#unless devoured}}
+                {{>burgers/burger-block devoured=true}}
+            {{/unless}}
+        {{/each}}
+    </u1>
+</div>
+<div>
+    <h2>Burgers Devoured</h2>
+    <u1>
+        {{#each burgers}}
+            {{#if devoured}}
+                {{>burgers/burger-block devoured=false}}
+            {{/if}}
+        {{/each}}
+    </u1>
+</div>
+
+</div>
