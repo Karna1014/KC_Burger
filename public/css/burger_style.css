@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: orange;
+}
+
+img {
+    border-radius: 10px;
+    margin: 25px;
+    text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.row {
+    margin-right: 20px;
+    margin-left: 20px;
+}

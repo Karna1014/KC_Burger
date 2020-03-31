@@ -1,37 +1,46 @@
 
 
 <div class= "container-fluid">
-    <div class= "row">
-        <div class= "col md 12">
-            <img src="../public/images/burger-bacon.jpg" 
-            height="200" class="right-block">
-            <img src="../public/images/burger-basic.jpg" 
-            height="200" class="center-block">
-            <img src="../public/images/burger-lamb.jpg" 
-            height="200" class="left-block">
+    <div class= "container">
+        <img src="/images/burger-basic.jpg" 
+        height="200" id= "burgerpic">
+    </div>
+</div>
+    <div class= "col md 12" style="text-align:center">
             <h1>Eat da Burger!</h1>
-        </div>
     </div>
     <br>
-<div>
-    <h2>Fav Burgers</h2>
-    <u1>
-        {{#each burgers}}
-            {{#unless devoured}}
-                {{>burgers/burger-block devoured=true}}
-            {{/unless}}
-        {{/each}}
-    </u1>
+
+    <div class="row">
+        <div>
+            <h2>Fav Burgers</h2>
+                <u1>
+                    {{#each addaBurger}}
+                        {{#unless devoured}}
+                            {{>addaBurger/burger-block devoured=true}}
+                        {{/unless}}
+                    {{/each}}
+                </u1>
+        </div>
+        <div>
+            <h2>Burgers Devoured</h2>
+                <u1>
+                    {{#each addaBurger}}
+                        {{#if devoured}}
+                            {{>addaBurger/burger-block devoured=false}}
+                        {{/if}}
+                    {{/each}}
+                </u1>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col md 12">
+        <form class="insertOne-updateone-form" method="POST" action="insertOne/updateOne">
+        <textarea class="form-control" id="burger-text-area" type="text" name="burger_name" placeholder="Add Your Favorite Burger Here"></textarea>
+				<button type="submit" id="new-burger-button">Submit</button>
+        </form>
+    </div>
 </div>
-<div>
-    <h2>Burgers Devoured</h2>
-    <u1>
-        {{#each burgers}}
-            {{#if devoured}}
-                {{>burgers/burger-block devoured=false}}
-            {{/if}}
-        {{/each}}
-    </u1>
 </div>
 
-</div>
