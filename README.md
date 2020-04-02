@@ -33,10 +33,10 @@ This app is about your favorite burgers! It's a burger logger using MySQL, Node,
    * [Node.js] (https://nodejs.org/en/)
    * [MySQL Workbench] (https://www.mysql.com/products/workbench)
    * NPM Packages:
-            * [Express] 
-            * [MySQL]
-            * [Express-Handlebars]
-            * [dotenv]
+        * [Express] 
+        * [MySQL]
+        * [Express-Handlebars]
+        * [dotenv]
     
    
    #### License: 
