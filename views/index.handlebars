@@ -1,9 +1,9 @@
 
 
 <div class= "container-fluid">
-    <div class= "container">
-        <img src="/images/burger-basic.jpg" 
-        height="200" id= "burgerpic">
+    <div class= "container mr-0 mt-3">
+        <img src="/images/burger3.jpg" 
+         id= "burgerpic">
     </div>
 </div>
     <div class= "col md 12" style="text-align:center">
@@ -12,7 +12,7 @@
     <br>
 
     <div class="row">
-        <div>
+        <div class="col md 6">
             <h2>Fav Burgers</h2>
                 <u1>
                     {{#each addaBurger}}
@@ -22,7 +22,7 @@
                     {{/each}}
                 </u1>
         </div>
-        <div>
+        <div class="col md 6">
             <h2>Burgers Devoured</h2>
                 <u1>
                     {{#each addaBurger}}
@@ -34,11 +34,11 @@
         </div>
     </div>
 
-<div class="row">
+<div class="row" style="margin-top: 25px;">
     <div class="col md 12">
-        <form class="insertOne-updateone-form" method="POST" action="insertOne/updateOne">
+        <form class="inUp-form inUp-form-sm" method="POST" action="/api/addaBurger">
         <textarea class="form-control" id="burger-text-area" type="text" name="burger_name" placeholder="Add Your Favorite Burger Here"></textarea>
-				<button type="submit" id="new-burger-button">Submit</button>
+				<button type="submit" class="orderNew btn-outline-dark btn btn-info mb-3" id="new-burger-button">Submit</button>
         </form>
     </div>
 </div>
