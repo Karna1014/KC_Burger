@@ -1,2 +1,2 @@
 NODE_ENV = production
-JAWSDB = 
+JAWSDB=mysql://rorsrc1obcihdeb8:ohvzzujxa2m32z9c@kil9uzd3tgem3naa.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/tz2qufb3h5bvfxil
