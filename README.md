@@ -28,10 +28,10 @@ This app is about your favorite burgers! It's a burger logger using MySQL, Node,
 
    npm install
    
-   ### Requirements: 
+   ### Technology: 
 
-   * [Node.js] (https://nodejs.org/en/)
-   * [MySQL Workbench] (https://www.mysql.com/products/workbench)
+   * [Node.js](https://nodejs.org/en/)
+   * [MySQL Workbench](https://www.mysql.com/products/workbench)
    * NPM Packages:
         * [Express] 
         * [MySQL]
